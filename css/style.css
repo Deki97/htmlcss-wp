@@ -19,16 +19,19 @@ img {
     width: 100%;
 }
 
+
 /* HEADER */
 .header-first-block {
     margin: 20px 0;
 }
 
+/* LOGO */
 .logo {
     height: 70px;
     width: auto;
 }
 
+/* NAVIGATION BAR */
 .navigation-bar ul {
     margin-top: 30px;
     list-style-type: none;
@@ -46,17 +49,20 @@ img {
     padding-right: 10px;
     font-weight: bold;
 }
+/* END NAVIGATION BAR */
 
+
+/* IMAGE CONTAINER */
 .header-second-block {
     position: relative;
     height: 500px;
-    background-color: #e1d67a;
     margin: 40px 0;
     border-radius: 10px;
     border: 1px solid lightgrey;
     overflow: hidden;
 }
 
+/* LAYOVER EFFECT */
 .layover {
     position: absolute;
     top: 0;
@@ -72,6 +78,7 @@ img {
     object-fit: cover;
 }
 
+/* TEXT INSIDE IMAGE BANNER */
 .text-container {
     color: white;
     width: 50%;
@@ -88,15 +95,17 @@ img {
 
 /* MAIN */
 main {
-    background-color: #0084fd;
     padding-bottom: 10px;
 }
 
-.main-title {
-    background-color: #abcfe7;
-    height: 80px;
+.main-title-container .title {
+    font-size: 40px;
+    font-weight: bold;
 }
 
+.main-title-container .subtitle {
+    color: #8c8c8c;
+}
 
 /* CLEARFIX */
 .clearfix::after {
@@ -108,34 +117,70 @@ main {
 
 /* COLUMN CONTAINER */
 .clearfix.column-container {
-    margin: 20px 0;
+    margin: 40px 0;
 }
 
 
 /* FLOAT COLONNE */
 .col {
     float: left; 
-    height: 500px;  /* in questo caso dato che ho le colonne tutte della stessa altezza assegno un unica proprietà height nella classe comune .col */
-    background-color: #abcfe7;  /* idem stesso ragionamento per il colore delle colonne, che in questo caso è il medesimo per tutte */
 }
 
 .col.column-left, .col.column-right {
     width: 20%;
+    position: relative;
 }
 
 .col.column-center {
     width: 56%;
     margin: 0 2%;   /* aggiungo un margine del 2% sia a destra che a sinistra della colonna centrale, andando poi a ridurre la width al 56% invece che 60% */
+    position: relative;
 }
+
+
+/* COLUMN IMAGE CONTAINER */
+.column-image-container {
+    position: relative;
+    height: 200px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.column-image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* COLUMN TEXT CONTAINER */
+.column-text-container .column-title {
+    font-size: 16px;
+    padding: 15px 0;
+}
+
+.column-text-container p {
+    color: #8c8c8c;
+}
+/* END COLUMN TEXT CONTAINER */
+
 /* END MAIN */
 
 
 /* FOOTER */
 footer {
-    height: 80px;
-    background-color: #8801fe;
+    text-align: center;
     margin: 8px 0 20px 0;
+    font-size: 18px;
+}
+
+.heart {
+    color: red;
+    font-size: 30px;
 }
 /* END FOOTER */
+
+/* END */
 
 
