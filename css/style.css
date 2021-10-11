@@ -1,0 +1,82 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+
+/* HEADER */
+.header-first-block {
+    height: 100px;
+    background-color: #e579e6;
+    margin: 20px 0;
+}
+
+.header-second-block {
+    height: 350px;
+    background-color: #e1d67a;
+    margin: 20px 0;
+}
+/* END HEADER */
+
+
+/* MAIN */
+main {
+    background-color: #0084fd;
+    padding-bottom: 10px;
+}
+
+.main-title {
+    background-color: #abcfe7;
+    height: 80px;
+}
+
+
+/* CLEARFIX */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* COLUMN CONTAINER */
+.clearfix.column-container {
+    margin: 20px 0;
+}
+
+
+/* FLOAT COLONNE */
+.col {
+    float: left; 
+    height: 500px;  /* in questo caso dato che ho le colonne tutte della stessa altezza assegno un unica proprietà height nella classe comune .col */
+    background-color: #abcfe7;  /* idem stesso ragionamento per il colore delle colonne, che in questo caso è il medesimo per tutte */
+}
+
+.col.column-left, .col.column-right {
+    width: 20%;
+}
+
+.col.column-center {
+    width: 56%;
+    margin: 0 2%;   /* aggiungo un margine del 2% sia a destra che a sinistra della colonna centrale, andando poi a ridurre la width al 56% invece che 60% */
+}
+/* END MAIN */
+
+
+/* FOOTER */
+footer {
+    height: 80px;
+    background-color: #8801fe;
+    margin: 8px 0 20px 0;
+}
+/* END FOOTER */
+
+
